@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-container" id="allInput">
+            <div class="previous" id="previousInput"></div>
+            <div class="operator" id="operatorInput"></div>
+            <div class="current" id="currentInput"></div>
+        </div>
+        <div class="button-container">
+            <button class="btn-w200" onclick="remove()">AC</button>
+            <button class="btn-w200" onclick="del()">DEL</button>
+            <button class="btn-w200" onclick="equal()">=</button>
+            <button class="btn" onclick="addBtn(7)">7</button>
+            <button class="btn" onclick="addBtn(8)">8</button>
+            <button class="btn" onclick="addBtn(9)">9</button>
+            <button class="btn" onclick="addOperator('/')">/</button>
+            <button class="btn" onclick="addBtn(4)">4</button>
+            <button class="btn" onclick="addBtn(5)">5</button>
+            <button class="btn" onclick="addBtn(6)">6</button>
+            <button class="btn" onclick="addOperator('*')">*</button>
+            <button class="btn" onclick="addBtn(1)">1</button>
+            <button class="btn" onclick="addBtn(2)">2</button>
+            <button class="btn" onclick="addBtn(3)">3</button>
+            <button class="btn" onclick="addOperator('+')">+</button>
+            <button class="btn-w185" onclick="addBtn(0)">0</button>
+            <button class="btn" onclick="addBtn('.')">.</button>
+            <button class="btn" onclick="addOperator('-')">-</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
